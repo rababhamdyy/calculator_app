@@ -30,6 +30,7 @@ class NumTextField extends StatelessWidget {
         style: TextStyle(color: Colors.white),
         keyboardType: TextInputType.number,
         cursorColor: Colors.white,
+        onSubmitted: (_) => FocusScope.of(context).unfocus(),
       ),
     );
   }
